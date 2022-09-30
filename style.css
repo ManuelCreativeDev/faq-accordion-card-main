@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Kumbh+Sans:wght@400;700&display=swap");
+
+/* 
+Background gradient:
+
+- Soft violet: hsl(273, 75%, 66%)
+- Soft blue: hsl(240, 73%, 65%) 
+
+## Typography
+
+### Body Copy
+
+- Font size: 12px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700
+- font-family: 'Kumbh Sans', sans-serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+    to bottom,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%)
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Kumbh Sans", sans-serif;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  width: 1000px;
+  background: hsl(240, 5%, 91%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 600px;
+  border-radius: 20px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.image {
+  position: absolute;
+  top: 20%;
+  right: 60.5%;
+  max-width: 80%;
+
+  flex-wrap: wrap;
+}
+
+.box-img {
+  position: absolute;
+  top: 46.9%;
+  left: 7.2%;
+  z-index: 1;
+}
+
+.img {
+  z-index: -1;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-right: 100px;
+  margin-bottom: 20px;
+}
+
+.faq {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 15%;
+  right: 15%;
+  width: 35%;
+}
+
+details {
+  margin: 15px 0;
+  border-bottom: 1px solid hsla(240, 6%, 50%, 0.274);
+  color: hsl(237, 12%, 33%);
+}
+
+details > summary {
+  list-style: none !important;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+details > summary:active {
+  color: hsl(237, 12%, 33%);
+  font-weight: 400;
+}
+
+details > summary:focus {
+  color: hsl(238, 29%, 16%);
+  font-weight: 700;
+}
+
+details > summary:hover {
+  color: hsl(14, 88%, 65%);
+}
+
+details > p {
+  color: hsl(240, 6%, 50%);
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.arrow {
+  padding-top: 7px;
+  float: right;
+  cursor: pointer;
+}
+
+.arrowUp {
+  float: right;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+@media screen and(max-width:375px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .faq {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 15%;
+    right: 15%;
+    width: 35%;
+  }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="imageOut">
+          <picture>
+            <img
+              class="box-img"
+              src="/images/illustration-box-desktop.svg"
+              alt=""
+            />
+          </picture>
+        </div>
+        <div class="container">
+          <div class="image">
+            <picture>
+              <source
+                media="(max-width: 375px)"
+                srcset="./images/illustration-woman-online-mobile.svg"
+              />
+              <img
+                src="./images/illustration-woman-online-desktop.svg"
+                alt=""
+                class="img"
+              />
+            </picture>
+          </div>
+
+          <div class="faq">
+            <div class="title">
+              <h1>FAQ</h1>
+            </div>
+            <details class="details">
+              <summary class="summary">
+                How many team members can I invite?
+                <picture>
+                  <img
+                    src="/images/icon-arrow-down.svg"
+                    alt="Arrow"
+                    class="arrow"
+                  />
+                </picture>
+              </summary>
+              <p id="p0"></p>
+            </details>
+
+            <details class="details">
+              <summary class="summary">
+                What is the maximum file upload size?
+                <picture
+                  ><img
+                    src="/images/icon-arrow-down.svg"
+                    alt="Arrow"
+                    class="arrow"
+                /></picture>
+              </summary>
+              <p id="p1"></p>
+            </details>
+            <details class="details">
+              <summary class="summary">
+                <span class="special">How do I reset my password?</span>
+
+                <picture
+                  ><img
+                    src="/images/icon-arrow-down.svg"
+                    alt="Arrow"
+                    class="arrow"
+                /></picture>
+              </summary>
+              <p id="p2"></p>
+            </details>
+
+            <details class="details">
+              <summary class="summary">
+                Can I cancel my subscription?
+                <picture
+                  ><img
+                    src="/images/icon-arrow-down.svg"
+                    alt="Arrow"
+                    class="arrow"
+                /></picture>
+              </summary>
+              <p id="p3"></p>
+            </details>
+            <details class="details">
+              <summary class="summary">
+                Do you provide additional support?
+                <picture
+                  ><img
+                    src="/images/icon-arrow-down.svg"
+                    alt="Arrow"
+                    class="arrow"
+                /></picture>
+              </summary>
+              <p id="p4"></p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="attribution" style="display: none">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Manuel Cabassa Fernandez</a>.
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
